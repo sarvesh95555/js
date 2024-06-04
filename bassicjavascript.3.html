@@ -1,0 +1,46 @@
+result
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Objects</title>
+    <script>
+        var student = {
+            name: "sarvesh",
+            No: "9",
+            Result: "pass"
+            //discountedprice:function(){return this.price-10;};
+        };
+        function f() {
+            console.log(document.getElementById("t1"));
+            document.getElementById("t1").value = student.name;
+            console.log(2);
+            document.getElementById("txtNo").value = student['No'];
+            document.getElementById("txtResult").value = student.Result;
+            // alert(book.discountedprice());
+        }
+        function f1() {
+            student.name = document.getElementById("t1").value;
+            student['No'] = document.getElementById("txtNo").value;
+            student.Result = document.getElementById("txtResult").value;
+
+        }
+    </script>
+</head>
+
+<body>
+    Candidate Name<input type="text"  id="t1" />
+    <br />
+    No.<input type="text" id="txtNo"/>
+    <br />
+    Result<input type="text" id="txtResult"/>
+    <br />
+    <input type="button" onClick="f()" value="Find"/>
+    <input type="button" onClick="f1()" value="Set"/>
+</body>
+
+</html>

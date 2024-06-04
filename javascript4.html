@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning Java Script</title>
+    <script>
+
+        function f1() {
+            console.log("Clicked");
+
+            a = document.getElementById("i1");
+            b = document.getElementById("i2");
+            c = document.getElementById("i3");
+            t = c.src;
+            c.src = b.src;
+            b.src = a.src;
+            a.src = t;
+        }
+
+            setInterval("f1()", 1000);
+
+        
+
+        
+    </script>
+
+</head>
+<style>
+    img {
+        width: 250px;
+    }
+</style>
+
+
+
+
+
+
+
+<body>
+
+     <img id="i1" src="no1.jpg" alt="" srcset="">
+
+    <img id="i2" src="no2.jpg" alt="" srcset="">
+
+    <img id="i3" src="no3.webp" alt="" srcset="">
+
+    <br> 
+    <button onclick="f1()">>></button>
+
+<script>
+
+
+    function f() {
+        console.log("Clicked");
+
+
+
+
+        a = document.getElementById("j1");
+        b = document.getElementById("j2");
+        c = document.getElementById("j3");
+        t = a.src;
+        a.src = b.src;
+        b.src = c.src;
+        c.src = t;   
+    }
+    setInterval("f()", 1000);
+    
+   
+    
+</script>
+
+
+<style>
+    img {
+        width: 250px;
+    }
+</style>
+
+
+    <img id="j1" src="no1.jpg" alt="" srcset="">
+
+    <img id="j2" src="no2.jpg" alt="" srcset="">
+
+    <img id="j3" src="no3.webp" alt="" srcset="">
+
+    <br>
+    <button onclick="f()">
+        << </button>
+
+
+
+
+</body>
+
+
+
+</html>

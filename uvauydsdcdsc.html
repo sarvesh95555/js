@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video with Heading</title>
+<style>
+  /* Styles to position the video container */
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+  }
+
+  /* Style for the video */
+  
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Style for the heading */
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px; /* Adjust as needed */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+
+<div class="video-container">
+  <video id="myVideo" controls>
+    <source src="your-video-file.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<script>
+  // Function to position the heading in the middle of the video
+  function positionHeading() {
+    var video = document.getElementById("myVideo");
+    var videoContainer = document.querySelector(".video-container");
+    var heading = document.createElement("div");
+    heading.className = "heading";
+    heading.textContent = "Your Heading Here";
+
+    // Calculate the position of the heading
+    var videoRect = video.getBoundingClientRect();
+    var videoWidth = videoRect.width;
+    var videoHeight = videoRect.height;
+
+    // Position the heading in the middle
+    heading.style.top = (videoRect.top + videoHeight / 2) + "px";
+    heading.style.left = (videoRect.left + videoWidth / 2) + "px";
+
+    // Append the heading to the video container
+    videoContainer.appendChild(heading);
+  }
+
+  // Call the function when the page loads
+  window.onload = positionHeading;
+</script>
+
+</body>
+</html>

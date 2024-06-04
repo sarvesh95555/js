@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Define an array of objects representing people
+let people = [
+  { name: "A", age: 30 },
+  { name: "B", age: 25 },
+  { name: "C", age: 35 }
+];
+
+// Define a function to generate the HTML for a single row of the table
+function generateRowHtml(person) {
+  return `
+    <tr>
+      <td>${person.name}</td>
+      <td>${person.age}</td>
+    </tr>
+  `;
+}
+
+// Map the array of people to an array of HTML rows
+let rows = people.map(generateRowHtml);
+
+// Join the rows together into a single HTML string
+let tableHtml = `
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${rows.join("")}
+    </tbody>
+  </table>
+`;
+
+// Insert the table HTML into the DOM
+document.getElementById("my-table").innerHTML = tableHtml;
+
+
+    </script>
+<div id="my-table">
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

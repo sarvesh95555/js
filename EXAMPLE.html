@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+  div {
+    border: solid black;
+  }
+
+  .r {
+    position: fixed;
+    width: 43%;
+    z-index: 1000;
+  }
+</style>
+<script>
+  let count = 1;
+  function add() {
+    document.getElementById("d1").innerHTML = `<br>New Dataa <br> <div class="card">
+  <img src="hotel.png" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> ` + document.getElementById("d1").innerHTML;
+  }
+
+
+
+
+
+</script>
+
+<body>
+  <div class="container-fluid">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="col">
+            <button>X</button>
+            <div class="col">
+              <button>HOME</button>
+            </div>
+            <div class="col">
+              <button>SEARCH</button>
+            </div>
+            <div class="col">
+              <button>NOTIFICATION</button>
+            </div>
+            <div class="col">
+              <button>MESSEGES</button>
+            </div>
+            <div class="col">
+              <button>GROK</button>
+            </div>
+            <div class="col">
+              <button>LISTS</button>
+            </div>
+            <div class="col">
+              <button>BOOKMARKS</button>
+            </div>
+            <div class="col">
+              <button>COMMUNITIES</button>
+            </div>
+            <div class="col">
+              <button>PREMIUM</button>
+            </div>
+            <div class="col">
+              <button>PROFILE</button>
+            </div>
+            <div class="col">
+              <button>MORE</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-primary">POST</button>
+            </div>
+            </style>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row r">
+            <div class="col-md-6">
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">For you</a>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-6">
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Following</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <br><br><br>
+          <div class="row">
+            <div class="col-md-12">
+              What is happening?
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="d1" class="card">
+
+                <img src="news.png" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                  <h5 class="card-title">Kia Launches Leasing Options on Product Line, Monthly EMI Starts at Rs 21,900
+                  </h5>
+                  <p class="card-text">To offer a smooth ownership experience to the customers, premium car maker Kia
+                    has
+                    launched a ‘Kia Lease’ program in India. The brand has already signed a Memorandum of Understanding
+                    (MoU) with ORIX Auto Infrastructure Services Limited, allowing interested customers to enjoy the
+                    service7
+                    from multiple cities including Delhi NCR, Mumbai, Hyderabad, Chennai, Bengaluru and Pune.</p>
+                  <a href="#" class="btn btn-primary">Visit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-md-4">
+          <div class="col">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <tr>
+              <h6>
+                Subscribe To Premium
+              </h6>
+              Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+              <button type="button" class="btn btn-primary">Subscribe</button>
+            </tr>
+            <div class="col">
+              <h6>
+                What’s happening
+              </h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script>
+    setInterval("add()", 2000);
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

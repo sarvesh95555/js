@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning Java Script</title>
+    <script>
+        function f1() {
+            console.log("Clicked");
+            let a = document.getElementById("t1");
+            let b = document.getElementById("t2");
+            let t = a.value;
+            a.value = b.value;
+            b.value = t;
+        }
+        function f2() {
+            console.log("Clicked2");
+            let a = document.getElementById("t2");
+
+            console.log(b);
+            console.log(b.value);
+
+            f1();
+
+
+
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <input id="t1" type="text">
+    <input id="t2" type="text">
+
+
+
+
+    <button onclick="f1()"> Swap</button>
+
+
+
+
+
+
+
+</body>
+
+</html>

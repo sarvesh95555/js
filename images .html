@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Resize</title>
+</head>
+
+<body>
+    <img id="myImage" src="no1.jpg" width="200" height="150">
+    <button onclick="resizeImage('myImage', 300, 200)">Make Bigger</button>
+    <button onclick="resizeImage('myImage', 100, 75)">Make Smaller</button>
+    
+    <script>
+        function resizeImage(imageId, width, height) {
+            img = document.getElementById(imageId);
+            img.width = width;
+            img.height = height;
+        }
+    </script>
+</body>
+
+</html>

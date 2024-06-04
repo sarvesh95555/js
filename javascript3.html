@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning Java Script</title>
+    <script>
+        function f() {
+            console.log("Clicked");
+            let a = document.getElementById("t1");
+            let b = document.getElementById("t2");
+            let c = document.getElementById("t3");
+            let t = a.value;
+            a.value = b.value;
+            b.value = c.value;
+            c.value = t;
+
+
+            a = document.getElementById("i1");
+            b = document.getElementById("i2");
+            c = document.getElementById("i3");
+            t = a.src;
+            a.src = b.src;
+            b.src = c.src;
+            c.src = t;
+
+
+        
+        }
+        function f1() {
+            console.log("Clicked");
+            let a = document.getElementById("t1");
+            let b = document.getElementById("t2");
+            let c = document.getElementById("t3");
+            let t = c.value;
+            c.value = b.value;
+            b.value = a.value;
+            a.value = t;
+
+
+
+            a = document.getElementById("i1");
+            b = document.getElementById("i2");
+            c = document.getElementById("i3");
+            t = c.src;
+            c.src = b.src;
+            b.src = a.src;
+            a.src = t;
+
+
+
+        }
+       setInterval("f()", 1000);
+       setInterval("f1()", 1000);
+
+    </script>
+
+</head>
+<style>
+    img {
+        width: 250px;
+    }
+</style>
+
+
+
+
+
+<body>
+    <input id="t1" type="text">
+    <img id="i1" src="no1.jpg" alt="" srcset="">
+    <input id="t2" type="text">
+    <img id="i2" src="no2.jpg" alt="" srcset="">
+    <input id="t3" type="text">
+    <img id="i3" src="no3.webp" alt="" srcset="">
+    <button onclick="f()">
+        << </button>
+            <br>
+            <button onclick="f1()">>></button>
+
+
+
+
+
+</body>
+
+</html>

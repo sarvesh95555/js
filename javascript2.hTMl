@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning Java Script</title>
+    <script>
+        function f() {
+            console.log("Clicked");
+            let a = document.getElementById("t1");
+            let b = document.getElementById("t2");
+            let c = document.getElementById("t3")
+            let t = c.value;
+            c.value = b.value;
+            b.value= a.value;
+            a.value = t;
+        }
+        
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <input id="t1" type="text">
+    <input id="t2" type="text">
+    <input id="t3" type="text"> 
+    <button onclick="f()"> <<<</button>
+
+
+
+
+
+
+</body>
+
+</html>
