@@ -1,80 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
+  <input type="text" id="nameInput" placeholder="Name">
+  <input type="number" id="ageInput" placeholder="Age">
+
   <script>
     const data = {
-      name: "Dhoni"
-      ,
+      name: "Dhoni",
       age: 9
-  
     };
-    document.getElementById("show")
-  
-  
-  
-  
-  
-  
-  
+
+    // Show the data in the input fields
+    document.getElementById("nameInput").value = data.name;
+    document.getElementById("ageInput").value = data.age;
+
     console.log(data);
-    console.log(data.name)
-    console.log(data.age)
-</script>  
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<body>
+    console.log(data.name);
+    console.log(data.age);
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </script>
+    crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
